@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scelta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="divForm">
+        <h1>AGGIORNA O ELIMINA UNA RECENZIONE</h1>
+        <form action="./risultato.php" method="post">
+            <p>Inserisci l'ID della recenzione:</p>
+            <input type="number" name="IDRecenzione">
+            <p>Scegli tra:</p>
+            <input type="radio" id="action1" name="azione" value="aggiornare"> Aggiornare
+            <input type="radio" id="action2" name="azione" value="eliminare" checked> Eliminare
+            <br>
+                <div id="divVoto" style="display:none;">
+                    <p>Inserisci il nuovo voto:</p>
+                    <input type="number" name="voto" max="5" min="1" value="1"> 
+                </div>
+            <br>
+            <br>
+            <input class="sendButton" type="submit" value="ESEGUI">
+        </form>
+    </div>
+
+    <!-- Link Script -->
+    <script src="./script.js"></script>
+</body>
+</html>
