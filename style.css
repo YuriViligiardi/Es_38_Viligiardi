@@ -33,10 +33,10 @@ body {
     margin: auto;
 }
 
-#correct {
+.correct {
     color: green;
 }
 
-#error {
+.error {
     color: red;
 }
